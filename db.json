@@ -17,6 +17,42 @@
       "phone_number": "0701000000",
       "week_KPI": "95",
       "mounth_KPI": "99"
+    },
+    {
+      "photo": "https://cdn-icons-png.flaticon.com/512/3577/3577050.png",
+      "name": "Kojoyar",
+      "surname": "R.",
+      "phone_number": "0702000000",
+      "week_KPI": "90",
+      "mounth_KPI": "93",
+      "id": 3
+    },
+    {
+      "photo": "https://cdn-icons-png.flaticon.com/512/7127/7127456.png",
+      "name": "Jibek",
+      "surname": "J.",
+      "phone_number": "0703000000",
+      "week_KPI": "90",
+      "mounth_KPI": "95",
+      "id": 4
+    },
+    {
+      "photo": "https://cdn-icons-png.flaticon.com/512/3577/3577050.png",
+      "name": "Sanat",
+      "surname": "A.",
+      "phone_number": "0704000000",
+      "week_KPI": "89",
+      "mounth_KPI": "94",
+      "id": 5
+    },
+    {
+      "photo": "https://cdn-icons-png.flaticon.com/512/3577/3577050.png",
+      "name": "Akyl",
+      "surname": "B.",
+      "phone_number": "0705000000",
+      "week_KPI": "85",
+      "mounth_KPI": "91",
+      "id": 6
     }
   ]
 }
