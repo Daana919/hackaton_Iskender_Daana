@@ -10,6 +10,7 @@ const studentsList = document.querySelector("#students-list");
 const addStudentBtn = document.querySelector("#add-student-btn");
 const saveStudentBtn = document.querySelector("#save-student-btn");
 // console.log(addNameInp,addSurnameInp, addPhoneNumberInp,addWeekKpiInp,addMounthKpiInp, studentsList);
+console.log(addStudentBtn);
 
 const STUDENTS_API = "http://localhost:8000/students";
 
