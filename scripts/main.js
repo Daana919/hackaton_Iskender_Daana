@@ -5,11 +5,16 @@ const addPhoneNumberInp = document.querySelector("#add-phone-number-inp");
 const addWeekKpiInp = document.querySelector("#add-week-kpi-inp");
 const addMounthKpiInp = document.querySelector("#add-mounth-kpi-inp");
 const addStudentImgInp = document.querySelector("#add-img-inp");
+const searchInp = document.querySelector('#search-inp')
 const studentsList = document.querySelector("#students-list");
 const addStudentBtn = document.querySelector("#add-student-btn");
 const saveStudentBtn = document.querySelector("#save-student-btn");
-
 const STUDENTS_API = "http://localhost:8000/students";
+
+//! pagination
+let currentPage = 1;
+let search = "";
+//! pagination
 
 //! add student scripts start
 async function addStudentToDB() {
@@ -55,21 +60,21 @@ addStudentBtn.addEventListener("click", addStudentToDB);
 //! render students on page scripts
 async function render() {
   studentsList.innerHTML = "";
-  let req = await fetch(STUDENTS_API);
+  let requestAPI = `${STUDENTS_API}?q=${search}&_page=${currentPage}&_limit=4`;
+
+  let req = await fetch(requestAPI);
   let students = await req.json();
   students.forEach((i) => {
     studentsList.innerHTML += `
       <div class="card m-5" style="width: 18rem;">
         <img src="${i.photo}" class="card-img-top" alt="error">
           <div class="card-body">
-              <h5 class="card-title">${i.name}</h5>
-              <p class="card-text">${i.description} ${i.surname}</p>
+              <h5 class="card-title">${i.name} ${i.surname}</h5>
               <p class="card-text">${i.phone_number}</p>
-              <p class="card-text">${i.week_KPI}</p>
-              <p class="card-text">${i.mounth_KPI}</p>
-              <a href="#" class="btn btn-primary edit-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="edit-${i.id}">Edit</a>
-              <a href="#" class="btn btn-primary delete-btn" id="del-${i.id}">Delete</a>
-
+              <p class="card-text"><b>WEEK KPI: </b>${i.week_KPI}</p>
+              <p class="card-text"><b>MOUNTH KPI: </b>${i.mounth_KPI}</p>
+              <a href="#" class="btn btn-outline-dark edit-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="edit-${i.id}">Edit</a>
+              <a href="#" class="btn btn-outline-danger delete-btn" id="del-${i.id}">Delete</a>
 
 
 
@@ -144,14 +149,14 @@ async function addStudentInfoToForm(e) {
   const editMounthKpiInp = document.querySelector("#edit-mounth-kpi-inp");
   const editStudentImgInp = document.querySelector("#edit-img-inp");
 
-//   console.log(
-//     editNameInp,
-//     editSurnameInp,
-//     editPhoneNumberInp,
-//     editWeekKpiInp,
-//     editMounthKpiInp,
-//     editStudentImgInp
-//   );
+  //   console.log(
+  //     editNameInp,
+  //     editSurnameInp,
+  //     editPhoneNumberInp,
+  //     editWeekKpiInp,
+  //     editMounthKpiInp,
+  //     editStudentImgInp
+  //   );
 
   editStudentImgInp.value = "";
   editNameInp.value = studentObj.name;
@@ -163,7 +168,6 @@ async function addStudentInfoToForm(e) {
   let saveChangesBtn = document.querySelector("#save-student-btn");
   saveChangesBtn.setAttribute("id", studentObj.id);
 
-
   async function saveChanges(e) {
     let updatedStudentObj = {
       id: e.target.id,
@@ -172,22 +176,20 @@ async function addStudentInfoToForm(e) {
       surname: editSurnameInp.value,
       phone_number: editPhoneNumberInp.value,
       week_KPI: editWeekKpiInp.value,
-      mounth_KPI: editMounthKpiInp.value
+      mounth_KPI: editMounthKpiInp.value,
     };
 
-
     if (
-        !addStudentImgInp.value.trim() ||
-        !addNameInp.value.trim() ||
-        !addSurnameInp.value.trim() ||
-        !addPhoneNumberInp.value.trim() ||
-        !addWeekKpiInp.value.trim() ||
-        !addMounthKpiInp.value.trim()
-      ) {
-        alert("Some inputs are empty");
-        return;
-      }
-
+      !addStudentImgInp.value.trim() ||
+      !addNameInp.value.trim() ||
+      !addSurnameInp.value.trim() ||
+      !addPhoneNumberInp.value.trim() ||
+      !addWeekKpiInp.value.trim() ||
+      !addMounthKpiInp.value.trim()
+    ) {
+      alert("Some inputs are empty");
+      return;
+    }
 
     await fetch(`${STUDENTS_API}/${e.target.id}`, {
       method: "PUT",
@@ -196,7 +198,7 @@ async function addStudentInfoToForm(e) {
         "Content-Type": "application/json;charset=utf-8",
       },
     });
-  
+
     //! edit inputs clear
     editPhoneNumberInp.value = "";
     editNameInp.value = "";
@@ -205,12 +207,10 @@ async function addStudentInfoToForm(e) {
     editWeekKpiInp.value = "";
     editMounthKpiInp.value = "";
 
-    
     saveChangesBtn.removeAttribute("id");
-    let btnClose = document.querySelector('.btn-close')
-    btnClose.click()
+    let btnClose = document.querySelector(".btn-close");
+    btnClose.click();
     render();
-
   }
   saveChangesBtn.addEventListener("click", saveChanges);
 }
@@ -218,5 +218,51 @@ async function addStudentInfoToForm(e) {
 function addEditEvent() {
   let editBtn = document.querySelectorAll(".edit-btn");
   editBtn.forEach((i) => i.addEventListener("click", addStudentInfoToForm));
-} 
+}
 //! edit student scripts end.
+//! search logic
+searchInp.addEventListener("input", () => {
+  search = searchInp.value;
+  currentPage = 1;
+  render();
+});
+//! search logic end
+//! pagination logic
+let prevPageBtn = document.querySelector("#prev-page-btn");
+let nextPageBtn = document.querySelector("#next-page-btn");
+
+async function getPagesCount() {
+  let res = await fetch(`${STUDENTS_API}`);
+  let products = await res.json();
+  let pagesCount = Math.ceil(products.length / 4);
+  return pagesCount;
+}
+async function checkPages() {
+  let maxPagesNum = await getPagesCount();
+  if (currentPage === 1) {
+    prevPageBtn.setAttribute("style", "display: none");
+    nextPageBtn.setAttribute("style", "display: block");
+  }
+  else if(currentPage === maxPagesNum) {
+    prevPageBtn.setAttribute("style", "display: block");
+    nextPageBtn.setAttribute("style", "display: none");
+  }
+  else {
+    prevPageBtn.setAttribute("style", "display: block");
+    nextPageBtn.setAttribute("style", "display: block");
+  }
+}
+checkPages();
+
+prevPageBtn.addEventListener('click', () => {
+  currentPage --;
+  checkPages()
+  render()
+})
+nextPageBtn.addEventListener('click', () => {
+  currentPage ++;
+  checkPages()
+  render()
+})
+//* pagination logic end
+//! product logic end
