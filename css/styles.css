@@ -1,0 +1,30 @@
+.image {
+    background-color: #490D40;
+    background: url(https://sonorangirl.github.io/Earth-Quotes/img/google-earth-view-South-Iceland3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 1000px;
+    margin-top: -90px
+    
+};
+
+
+#addStudent-modal {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 1.2em;}
+        
+#addStudent-modal:hover {
+    color: #C57ED3;
+    border-color: #C57ED3;
+    }
+
+    .navbar {
+        height: 80px;
+        background-color: transparent !important;
+        border: none;
+        color: white;
+        z-index: 100;
+        transition: background-color 1s ease 0s;
+      }
