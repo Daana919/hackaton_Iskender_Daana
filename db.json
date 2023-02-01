@@ -53,6 +53,15 @@
       "week_KPI": "85",
       "mounth_KPI": "91",
       "id": 6
+    },
+    {
+      "photo": "no",
+      "name": "NEKTO",
+      "surname": "A.",
+      "phone_number": "0777777777",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 7
     }
   ]
 }
