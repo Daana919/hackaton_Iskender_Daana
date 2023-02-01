@@ -1,3 +1,94 @@
 {
-  "students": []
+  "students": [
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "S",
+      "phone_number": "900",
+      "week_KPI": "100",
+      "mounth_KPI": "90",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "akyl",
+      "surname": "b",
+      "phone_number": "777",
+      "week_KPI": "88",
+      "mounth_KPI": "72",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "S",
+      "phone_number": "900",
+      "week_KPI": "100",
+      "mounth_KPI": "90",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "akyl",
+      "surname": "b",
+      "phone_number": "777",
+      "week_KPI": "88",
+      "mounth_KPI": "72",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "S",
+      "phone_number": "900",
+      "week_KPI": "100",
+      "mounth_KPI": "90",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "akyl",
+      "surname": "b",
+      "phone_number": "777",
+      "week_KPI": "88",
+      "mounth_KPI": "72",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "S",
+      "phone_number": "900",
+      "week_KPI": "100",
+      "mounth_KPI": "90",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "akyl",
+      "surname": "b",
+      "phone_number": "777",
+      "week_KPI": "88",
+      "mounth_KPI": "72",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "S",
+      "phone_number": "900",
+      "week_KPI": "100",
+      "mounth_KPI": "90",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "akyl",
+      "surname": "b",
+      "phone_number": "777",
+      "week_KPI": "88",
+      "mounth_KPI": "72",
+      "id": 2
+    }
+  ]
 }
