@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <title>Hackaton</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
 <body>
-    <*-- navbar -->
+    <!--* navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Students KPI</a>
-            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Переключатель навигации">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" href="#">Home</a>
-                    </li>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="collapse" data-bs-target="#collapseExample"
@@ -37,28 +39,28 @@
             </div>
         </div>
     </nav>
-    
-<!--* pagination -->
+
+    <!--* pagination -->
     <div class="d-flex w-100 justify-content-center">
-        <a class="btn btn-outline-dark m-1" href="#" aria-label="Previous" id="prev-page-btn">
+        <a class="btn btn-light m-1" href="#" aria-label="Previous" id="prev-page-btn">
             <span aria-hidden="true">&laquo;</span>
         </a>
-        <a class="btn btn-outline-dark m-1" href="#" aria-label="Next" id="next-page-btn">
+        <a class="btn btn-light m-1" href="#" aria-label="Next" id="next-page-btn">
             <span aria-hidden="true">&raquo;</span>
         </a>
     </div>
-<!--* add student -->
+    <!--* add student -->
 
     <div class="collapse w100 justify-content-center text-center" id="collapseExample">
-        <div class="mt-5 d-flex flex-column w-100%" id="admin-panel">
-            <h2>Student information</h2>
+        <div class="mt-5 d-flex flex-column w-100%" id="add-panel">
+            <h2 id="add-panel-head">STUDENT INFO</h2>
             <input type="text" id="add-name-inp" placeholder="Student name" class="mb-2 w-50 m-auto">
             <input type="text" id="add-surname-inp" placeholder="Student surname" class="mb-2 w-50 m-auto">
             <input type="text" id="add-phone-number-inp" placeholder="Phone number" class="mb-2 w-50 m-auto">
             <input type="text" id="add-week-kpi-inp" placeholder="Week KPI" class="mb-2 w-50 m-auto">
             <input type="text" id="add-mounth-kpi-inp" placeholder="Mounth KPI" class="mb-2 w-50 m-auto">
             <input type="text" id="add-img-inp" placeholder="Student photo Url" class="mb-2 w-50 m-auto">
-            <button class="btn btn-outline-success w-50 m-auto add-stu" id="add-student-btn">Add</button>
+            <button class="btn btn-dark w-50 m-auto add-stu" id="add-student-btn">Add</button>
         </div>
     </div>
 
@@ -66,8 +68,15 @@
     <div class="d-flex flex-wrap justify-content-center" id="students-list">
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <script src="./scripts/main.js"></script>
+
 </body>
 
 </html>

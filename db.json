@@ -1,94 +1,22 @@
 {
   "students": [
     {
-      "photo": "url",
+      "id": 1,
+      "photo": "https://cdn-icons-png.flaticon.com/512/7127/7127456.png",
       "name": "Daana",
-      "surname": "S",
-      "phone_number": "900",
-      "week_KPI": "100",
-      "mounth_KPI": "90",
-      "id": 1
+      "surname": "S.",
+      "phone_number": "0700000000",
+      "week_KPI": "95",
+      "mounth_KPI": "100"
     },
     {
-      "photo": "url",
-      "name": "akyl",
-      "surname": "b",
-      "phone_number": "777",
-      "week_KPI": "88",
-      "mounth_KPI": "72",
-      "id": 2
-    },
-    {
-      "photo": "url",
-      "name": "Daana",
-      "surname": "S",
-      "phone_number": "900",
-      "week_KPI": "100",
-      "mounth_KPI": "90",
-      "id": 1
-    },
-    {
-      "photo": "url",
-      "name": "akyl",
-      "surname": "b",
-      "phone_number": "777",
-      "week_KPI": "88",
-      "mounth_KPI": "72",
-      "id": 2
-    },
-    {
-      "photo": "url",
-      "name": "Daana",
-      "surname": "S",
-      "phone_number": "900",
-      "week_KPI": "100",
-      "mounth_KPI": "90",
-      "id": 1
-    },
-    {
-      "photo": "url",
-      "name": "akyl",
-      "surname": "b",
-      "phone_number": "777",
-      "week_KPI": "88",
-      "mounth_KPI": "72",
-      "id": 2
-    },
-    {
-      "photo": "url",
-      "name": "Daana",
-      "surname": "S",
-      "phone_number": "900",
-      "week_KPI": "100",
-      "mounth_KPI": "90",
-      "id": 1
-    },
-    {
-      "photo": "url",
-      "name": "akyl",
-      "surname": "b",
-      "phone_number": "777",
-      "week_KPI": "88",
-      "mounth_KPI": "72",
-      "id": 2
-    },
-    {
-      "photo": "url",
-      "name": "Daana",
-      "surname": "S",
-      "phone_number": "900",
-      "week_KPI": "100",
-      "mounth_KPI": "90",
-      "id": 1
-    },
-    {
-      "photo": "url",
-      "name": "akyl",
-      "surname": "b",
-      "phone_number": "777",
-      "week_KPI": "88",
-      "mounth_KPI": "72",
-      "id": 2
+      "id": 2,
+      "photo": "https://cdn-icons-png.flaticon.com/512/3577/3577050.png",
+      "name": "Iskender",
+      "surname": "S.",
+      "phone_number": "0701000000",
+      "week_KPI": "95",
+      "mounth_KPI": "99"
     }
   ]
 }
