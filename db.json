@@ -1,3 +1,274 @@
 {
-  "students": []
+  "students": [
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    },
+    {
+      "photo": "url",
+      "name": "Daana",
+      "surname": "Sagynbekova",
+      "phone_number": "+99209300132",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 1
+    },
+    {
+      "photo": "url",
+      "name": "Iskender",
+      "surname": "Almazov",
+      "phone_number": "+79307098831",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 2
+    },
+    {
+      "photo": "url",
+      "name": "Akyl",
+      "surname": "Bolotbekov",
+      "phone_number": "+924812984901",
+      "week_KPI": "100",
+      "mounth_KPI": "100",
+      "id": 3
+    }
+  ]
 }
