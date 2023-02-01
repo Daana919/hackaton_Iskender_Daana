@@ -1,0 +1,33 @@
+body {
+    width: 100% !important;
+    /* background-image: url(https://images.pexels.com/photos/3137068/pexels-photo-3137068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+    background-image: url(https://images.pexels.com/photos/12939552/pexels-photo-12939552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    font-family: 'Josefin Sans', sans-serif !important;
+  }
+
+
+.navbar{
+    background-color: transparent !important;
+    font-size: 25px !important;
+}
+#add-panel{
+    background-color: rgba(0, 0, 0, 0.379);
+}
+
+
+#add-panel-head{
+    color: aliceblue !important;
+    margin-top: 2% !important;
+}
+#add-student-btn{
+    margin-bottom: 2% !important;
+}
+
+.card{
+    margin-top: 10% !important;
+    background-color: rgba(0, 0, 0, 0.478);
+    color: rgb(255, 248, 248);
+}
+.modal-header{
+    color: black !important;
+}

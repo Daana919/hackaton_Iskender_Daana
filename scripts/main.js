@@ -5,7 +5,7 @@ const addPhoneNumberInp = document.querySelector("#add-phone-number-inp");
 const addWeekKpiInp = document.querySelector("#add-week-kpi-inp");
 const addMounthKpiInp = document.querySelector("#add-mounth-kpi-inp");
 const addStudentImgInp = document.querySelector("#add-img-inp");
-const searchInp = document.querySelector('#search-inp')
+const searchInp = document.querySelector("#search-inp");
 const studentsList = document.querySelector("#students-list");
 const addStudentBtn = document.querySelector("#add-student-btn");
 const saveStudentBtn = document.querySelector("#save-student-btn");
@@ -70,11 +70,11 @@ async function render() {
         <img src="${i.photo}" class="card-img-top" alt="error">
           <div class="card-body">
               <h5 class="card-title">${i.name} ${i.surname}</h5>
-              <p class="card-text">${i.phone_number}</p>
+              <p class="card-text"><b>Number: </b>${i.phone_number}</p>
               <p class="card-text"><b>WEEK KPI: </b>${i.week_KPI}</p>
               <p class="card-text"><b>MOUNTH KPI: </b>${i.mounth_KPI}</p>
-              <a href="#" class="btn btn-outline-dark edit-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="edit-${i.id}">Edit</a>
-              <a href="#" class="btn btn-outline-danger delete-btn" id="del-${i.id}">Delete</a>
+              <a href="#" class="btn btn-outline-light edit-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="edit-${i.id}">Edit</a>
+              <a href="#" class="btn btn-secondary delete-btn" id="del-${i.id}">Delete</a>
 
 
 
@@ -83,12 +83,11 @@ async function render() {
               <div class="modal-dialog">
                   <div class="modal-content">
                       <div class="modal-header">
-                          <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                          <h5 class="modal-title" id="staticBackdropLabel">STUDENT INFO</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                       </div>
                       <div class="modal-body">
                           <div class="d-flex flex-column w-100 align-items-center" id="addStudent-block">
-                              <h2>Student information</h2>
                               <input type="text" id="edit-name-inp" placeholder="Student name"
                                   class="mb-2 w-100 form-control">
                               <input type="text" id="edit-surname-inp" placeholder="Student surname"
@@ -158,7 +157,7 @@ async function addStudentInfoToForm(e) {
   //     editStudentImgInp
   //   );
 
-  editStudentImgInp.value = "";
+  editStudentImgInp.value = studentObj.photo;
   editNameInp.value = studentObj.name;
   editSurnameInp.value = studentObj.surname;
   editPhoneNumberInp.value = studentObj.phone_number;
@@ -180,12 +179,12 @@ async function addStudentInfoToForm(e) {
     };
 
     if (
-      !addStudentImgInp.value.trim() ||
-      !addNameInp.value.trim() ||
-      !addSurnameInp.value.trim() ||
-      !addPhoneNumberInp.value.trim() ||
-      !addWeekKpiInp.value.trim() ||
-      !addMounthKpiInp.value.trim()
+      !editStudentImgInp.value.trim() ||
+      !editNameInp.value.trim() ||
+      !editSurnameInp.value.trim() ||
+      !editPhoneNumberInp.value.trim() ||
+      !editWeekKpiInp.value.trim() ||
+      !editMounthKpiInp.value.trim()
     ) {
       alert("Some inputs are empty");
       return;
@@ -242,27 +241,25 @@ async function checkPages() {
   if (currentPage === 1) {
     prevPageBtn.setAttribute("style", "display: none");
     nextPageBtn.setAttribute("style", "display: block");
-  }
-  else if(currentPage === maxPagesNum) {
+  } else if (currentPage === maxPagesNum) {
     prevPageBtn.setAttribute("style", "display: block");
     nextPageBtn.setAttribute("style", "display: none");
-  }
-  else {
+  } else {
     prevPageBtn.setAttribute("style", "display: block");
     nextPageBtn.setAttribute("style", "display: block");
   }
 }
 checkPages();
 
-prevPageBtn.addEventListener('click', () => {
-  currentPage --;
-  checkPages()
-  render()
-})
-nextPageBtn.addEventListener('click', () => {
-  currentPage ++;
-  checkPages()
-  render()
-})
+prevPageBtn.addEventListener("click", () => {
+  currentPage--;
+  checkPages();
+  render();
+});
+nextPageBtn.addEventListener("click", () => {
+  currentPage++;
+  checkPages();
+  render();
+});
 //* pagination logic end
 //! product logic end
