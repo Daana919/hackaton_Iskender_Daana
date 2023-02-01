@@ -50,7 +50,7 @@ async function addStudentToDB() {
 }
 
 addStudentBtn.addEventListener("click", addStudentToDB);
-//! add student scripts end
+//! add student scripts end.
 
 //! render students on page scripts
 async function render() {
@@ -112,7 +112,7 @@ async function render() {
   addEditEvent();
 }
 render();
-//! render scripts end
+//! render scripts end.
 
 //! delete student scripts
 async function deleteStudent(e) {
@@ -127,7 +127,7 @@ function addDeleteEvent() {
   let deleteStudentBtn = document.querySelectorAll(".delete-btn");
   deleteStudentBtn.forEach((i) => i.addEventListener("click", deleteStudent));
 }
-//! delete student scripts end
+//! delete student scripts end.
 
 //! edit student scripts
 async function addStudentInfoToForm(e) {
@@ -219,5 +219,4 @@ function addEditEvent() {
   let editBtn = document.querySelectorAll(".edit-btn");
   editBtn.forEach((i) => i.addEventListener("click", addStudentInfoToForm));
 } 
-//! edit student scripts end
-
+//! edit student scripts end.
